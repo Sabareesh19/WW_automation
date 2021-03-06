@@ -33,6 +33,7 @@ class WeightWatchLocators():
     FIRST_SEARCH_TITLE = (By.XPATH, '//a[contains(text(), "WW Studio Flatiron")]')
     DISTANCE = (By.XPATH, '//span[contains(text(),"0.49 mi")]')
     BUSINESS_HOURS = (By.XPATH, '//span[@class="time-35INk"]')
+    BUSINESS_HOUR =(By.XPATH,'//div[contains(text(),"Closed")]')
     BUSINESS_HOUR_DROPDOWN = (By.XPATH, '//div[@class="title-3o8Pv"]')
     #SUNDAY = (By.XPATH, '//span[contains(text(),"SUN")]')
     USER_JOHN = (By.XPATH, '//span[contains(text(),"JOHN B.")]')

@@ -76,10 +76,15 @@ class WeightWatchersPage(BasePage):
         click_businesshours.click()
         time.sleep(2)
     
+    def today_hour(self):
+        today_hour = self.driver.find_element(*WeightWatchLocators.BUSINESS_HOUR)
+        return today_hour.text
+    
     def today_hours(self):
         #waiting_for_element = self.wait_element_is_visible(LoginPageLocators.BUSINESS_HOURS, self.timeout_time_default)
         hours_working = self.driver.find_element(*WeightWatchLocators.BUSINESS_HOURS)
         return hours_working.text
+
     def days(self):
         sunday = self.driver.find_element(*WeightWatchLocators.SUN)
         return sunday.text
